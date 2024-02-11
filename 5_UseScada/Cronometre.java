@@ -12,7 +12,7 @@ public class Cronometre /* OB4: realizar un programa que actue como un cron�me
 		this.marcha = false;
 	}
 
-	public void marxa() // per posar-lo en marxa
+	public synchronized void marxa() // per posar-lo en marxa
 	{
 		if (!this.marcha) {
 			Date instante = new Date();
@@ -21,7 +21,7 @@ public class Cronometre /* OB4: realizar un programa que actue como un cron�me
 		}
 	}
 
-	public void para() // per parar-lo
+	public synchronized void para() // per parar-lo
 	{
 		if (this.marcha) {
 			Date instante = new Date();
@@ -30,7 +30,7 @@ public class Cronometre /* OB4: realizar un programa que actue como un cron�me
 		}
 	}
 
-	public void posaAzero()// per posar-lo a zero (para ponerlo a cero)
+	public synchronized void posaAzero()// per posar-lo a zero (para ponerlo a cero)
 	{
 		Date instante = new Date();
 		this.inicio = instante.getTime();
