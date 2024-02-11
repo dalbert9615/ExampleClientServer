@@ -1,2 +1,2 @@
 # ExampleClientServer
-Example about connection Client-Server to read a Temperature probe
+Example about connection Client-Server to read a remote Temperature probe
