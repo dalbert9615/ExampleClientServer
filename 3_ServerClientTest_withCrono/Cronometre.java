@@ -1,7 +1,5 @@
-package OP10;
-
 import java.util.Date; //libreria Date 
-public class Cronometre /*OB4: realizar un programa que actue como un cronómetro*/
+public class Cronometre /*OB4: realizar un programa que actue como un cronï¿½metro*/
 {
 	private long acumulado;// acumulador de tiempo
 	private long inicio; // punto de inicio

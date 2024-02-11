@@ -1,5 +1,3 @@
-package OP10;
-
 import java.io.*;
 import java.net.*;
 
@@ -8,9 +6,6 @@ public class AplicacioServidor
 
 	public static void main(String[] args) throws IOException, InterruptedException
 	{
-		Cronometre crono=new Cronometre(); //incorporar cronómetro
-		crono.marxa();
-		
 		ServerSocket ss=new ServerSocket (1500);
 		Socket soc;
 		soc=ss.accept();
@@ -25,9 +20,6 @@ public class AplicacioServidor
 		byte[] mensaje=m.getBytes("UTF-8");
 		
 		os.write(mensaje);
-	
-		int tiempo=Math.toIntExact(crono.transcorregut())/1000;
-		os.write(tiempo);
 		
 		InputStream is;
 		is=soc.getInputStream();

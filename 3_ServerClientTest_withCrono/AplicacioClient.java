@@ -1,5 +1,3 @@
-package OB7;
-
 import java.io.*;
 import java.net.*;
 
@@ -18,6 +16,11 @@ public class AplicacioClient {
 		
 		String mensaje=new String(m,"UTF-8");
 		System.out.println(mensaje);
+		
+		Thread.sleep(1000);
+		int tiempo=is.read();
+		System.out.println("Han pasado "+ tiempo+ " segundos desde la ejecuci�n del servidor."+"\n");
+		Thread.sleep(2000);
 		
 		OutputStream os;
 		os=soc.getOutputStream();

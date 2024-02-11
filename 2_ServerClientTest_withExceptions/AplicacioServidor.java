@@ -1,5 +1,3 @@
-package OP8;
-
 import java.io.*;
 import java.net.*;
 
@@ -50,7 +48,7 @@ public class AplicacioServidor
 		String mensaje2=new String(m2,"UTF-8");
 		
 		if("SALUTACIONS\n".equals(mensaje2))System.out.println(mensaje2);
-		else System.out.println("El mensaje entrante no es el correcto o no está bien decodificado.\n");
+		else System.out.println("El mensaje entrante no es el correcto o no estï¿½ bien decodificado.\n");
 		
 		os.close();
 		is.close();	
@@ -61,7 +59,7 @@ public class AplicacioServidor
 			ss.close();
 			
 		} catch (SocketException e) {
-			System.out.println("Si se cierra el socket en este momento habrá pédidas en la comunicación.\n");
+			System.out.println("Si se cierra el socket en este momento habrï¿½ pï¿½didas en la comunicaciï¿½n.\n");
 		}
 	}
 

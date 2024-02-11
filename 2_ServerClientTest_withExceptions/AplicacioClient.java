@@ -1,5 +1,3 @@
-package OP8;
-
 import java.io.*;
 import java.net.*;
 
@@ -15,7 +13,7 @@ public class AplicacioClient {
 			
 		} catch (UnknownHostException e) {
 			
-			System.out.println("La IP a la que intenta conectarse no es válida.");
+			System.out.println("La IP a la que intenta conectarse no es vï¿½lida.");
 		} 
 		
 		Thread.sleep(1000); //espera para no sobrecargar los recursos usados por el programa
@@ -28,7 +26,7 @@ public class AplicacioClient {
 			
 		} catch (IOException e) {
 			
-			System.out.println("Ha habido un problema con la conexión.");
+			System.out.println("Ha habido un problema con la conexiï¿½n.");
 		}
 		
 		byte[] m=new byte[10];
@@ -39,7 +37,7 @@ public class AplicacioClient {
 		mensaje=new String(m,"UTF-8");
 		
 		if("BENVINGUT\n".equals(mensaje))System.out.println(mensaje);
-		else System.out.println("El mensaje entrante no es el correcto o no está bien decodificado.\n");
+		else System.out.println("El mensaje entrante no es el correcto o no estï¿½ bien decodificado.\n");
 		
 		
 		OutputStream os;
